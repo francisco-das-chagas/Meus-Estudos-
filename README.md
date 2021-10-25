@@ -2,7 +2,7 @@
 
 Neste repositório deixarei por escrito algumas questões teóricas que são chatas, porém necessárias para a minha evolução profissional.
 
-### JS 
+## JS 
 - [Como funciona o JS](#how-js-works)
 - [O que é o JS](#what-is-js)
 - [Hoisting](#hosting)
@@ -15,13 +15,13 @@ Neste repositório deixarei por escrito algumas questões teóricas que são cha
 - [Currying](#currying)
 - [Higher-Order Functions](#higher-order-functions)
 
-#### <a name="how-js-works"></a> Como funciona o JS
+### <a name="how-js-works"></a> Como funciona o JS
 O google chrome usa a engine v8 (open source escrita em c++) . A engine v8 serve para interpretar um código javascript. 
 A v8 foi projetada para aumentar a perfomance de execução do JS dentro de navegadores, ele compila código JS em código de maquina ao invés de usar um interpretador. Ele compila de js para código de máquina em tempo de execução, implementando um compilador JIT (just in time).
 
 ```JS => c++ => Assembly => Machine Code ```
 
-#### <a name="what-is-js"></a> O que é o JS
+### <a name="what-is-js"></a> O que é o JS
 Javascript é como nós chamamos a linguaguem (mas isso é o trademark da Oracle), o nome oficial da linguagem é ECMAScript (ES) é a abreviação. 
 
 ```ES6 === ECMAScript 6 === ES2015```, é simplesmente a versão *mais nova da linguagem (entre aspas)*.
@@ -44,7 +44,7 @@ fontes:
 - [https://pt.wikipedia.org/wiki/Interpretador_de_JavaScript](https://pt.wikipedia.org/wiki/Interpretador_de_JavaScript)
 - [https://pt.stackoverflow.com/questions/383174/o-ecmascript-6-%C3%A9-suportado-pelos-browsers-atuais](https://pt.stackoverflow.com/questions/383174/o-ecmascript-6-%C3%A9-suportado-pelos-browsers-atuais)
 
-#### <a name="hoisting"></a> Hoisting
+### <a name="hoisting"></a> Hoisting
 Hoisting é o içamento de funções e variáveis para o topo do código, isso declara as variáveis e funções em memória e permite que você use uma função/variável antes mesmo de declara-la.
 ```javascript
 sayHello();
@@ -62,7 +62,7 @@ console.log(num); // 6 -> agora num já foi inicializada
 var num;
 ```
 
-####  <a name="scope"></a>Scope
+###  <a name="scope"></a>Scope
 Escopo é a acessibilidade de objetos, variáveis e funções em diferentes partes do código.
 
 - Escopo Global
@@ -74,7 +74,7 @@ Escopo é a acessibilidade de objetos, variáveis e funções em diferentes part
 - Escopo de bloco
 	- Não existia no JS escopo de bloco. Ou seja, for whiles e ifs não tinham escopo próprio. Porém com o ECMAScript 6 foi possível criar escopos de bloco usando as variáveis **let** e **const**, que são **acessíveis somente dentro do bloco.**
 
-#### <a name="nested-scopes"></a> Nested Scopes
+### <a name="nested-scopes"></a> Nested Scopes
 
 Todo o escopo é fechado para acessos externos, de forma que escopos superiores não conseguem acessar escopos internos, mas o contrário é permitido.
 
@@ -89,7 +89,7 @@ function foo() {
 Quando criamos outra função dentro da função foo, estamos colocando outra caixa dentro do escopo da função, criando o que é chamado de “nested scopes”, ou escopos aninhados.
 
 
-#### <a name="variables"></a> Variables (var, let e const)
+### <a name="variables"></a> Variables (var, let e const)
 
 ![enter image description here](http://www.constletvar.com/const-vs-let-vs-var.png)
 
@@ -146,7 +146,7 @@ num = 8; // ❌ Não pode ser reatribuída porque é const
 
 ```
 	
-#### <a name="es6-features"></a> ES6 Features
+### <a name="es6-features"></a> ES6 Features
 
 - Declaração de variáveis
 - Default Parameters
@@ -158,7 +158,7 @@ num = 8; // ❌ Não pode ser reatribuída porque é const
 
 fonte: [https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f](https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f)
 
-#### <a name="pure-functions"></a> Pure Functions
+### <a name="pure-functions"></a> Pure Functions
 - Dada a mesma entrada, vai sempre retornar a mesma saída
 - Não produz nenhum efeito colateral
 ```javascript
@@ -172,7 +172,7 @@ pureFunction(1,2) // retorna 3
 	 - Mais fáceis de implementar e testar
 	 - Código mais limpo, prático e de simples manutenção
  
-#### <a name="currying"></a> Currying
+### <a name="currying"></a> Currying
 ```Currying é o nome dado à técnica de dividimos uma função que recebe vários argumentos numa série de funções cada uma lidando com **um** argumento da função inicial.```
 
 - Forma de injetar os parametros de forma parcial. 
@@ -204,7 +204,7 @@ console.log(myFunction(1)) // retorna a função esperando o segundo parametro
 console.log(myFunction(2)(4)(3)) // retorna 8
 ```
 
-#### <a name="higher-order-functions"></a> Higher-Order Functions
+### <a name="higher-order-functions"></a> Higher-Order Functions
 - É uma função que **recebe como parâmetro** outra função e/ou que **retorna** uma função
 - Ex: map, reduce, filter..
  
@@ -236,7 +236,7 @@ calculate(sum, 2, 5); // 7
 calculate(mult, 2, 5); // 10
  ```
 
-#### <a name="closure"></a> Closure
+### <a name="closure"></a> Closure
 - Closure é a forma de fazer com que as variáveis dentro de uma função sejam **privadas** e **persistentes**.
 - Se refere à forma como funções definidas dentro de um "contexto léxico" (i.e. o corpo de uma função, um bloco, um arquivo fonte) acessam variáveis definidas nesse contexto.
 
