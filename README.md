@@ -91,7 +91,7 @@ Quando criamos outra função dentro da função foo, estamos colocando outra ca
 
 #### <a name="variables"></a> Variables (var, let e const)
 
-![enter image description here](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1ee22f2b-7f95-48ac-890a-04e836a28492/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5/20200801/us-west-2/s3/aws4_request&X-Amz-Date=20200801T182119Z&X-Amz-Expires=86400&X-Amz-Signature=2f0cb6811c8cba5fd0103919a5856e514fdccdc8027343f324602c888251dd38&X-Amz-SignedHeaders=host&response-content-disposition=filename%20=%22Untitled.png%22)
+![enter image description here](http://www.constletvar.com/const-vs-let-vs-var.png)
 
 - Var 
 	-    é içada
