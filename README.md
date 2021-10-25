@@ -1,4 +1,4 @@
-### Meus Estudos 🧠
+## Meus Estudos 🧠
 
 Neste repositório deixarei por escrito algumas questões teóricas que são chatas, porém necessárias para a minha evolução profissional.
 
